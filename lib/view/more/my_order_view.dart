@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:food_app/common/color_extension.dart';
 import 'package:food_app/common_widget/round_button.dart';
 
+import 'checkout_view.dart';
+
 class MyOrderView extends StatefulWidget {
   const MyOrderView({super.key});
 
@@ -342,7 +344,7 @@ class _MyOrderViewState extends State<MyOrderView> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => Container(),
+                              builder: (context) => const CheckoutView(),
                             ),
                           );
                         }),

@@ -3,6 +3,7 @@ import 'package:food_app/common/color_extension.dart';
 import 'package:food_app/common_widget/tab_button.dart';
 import 'package:food_app/view/home/home_view.dart';
 import 'package:food_app/view/menu/menu_view.dart';
+import 'package:food_app/view/more/more_view.dart';
 import 'package:food_app/view/offer/offer_view.dart';
 import 'package:food_app/view/profile/profile_view.dart';
 
@@ -107,7 +108,7 @@ class _MainTabViewState extends State<MainTabView> {
                   onTap: () {
                     if (selctTab != 4) {
                       selctTab = 4;
-                      selectPageView = Container();
+                      selectPageView = const MoreView();
                     }
                     if (mounted) {
                       setState(() {});
