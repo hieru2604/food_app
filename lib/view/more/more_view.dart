@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-// import 'package:food_app/view/more/about_us_view.dart';
-// import 'package:food_app/view/more/inbox_view.dart';
+import 'package:food_app/view/more/about_us_view.dart';
+import 'package:food_app/view/more/inbox_view.dart';
 import 'package:food_app/view/more/payment_details_view.dart';
 
 import '../../common/color_extension.dart';
@@ -130,14 +130,12 @@ class _MoreViewState extends State<MoreView> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) =>
-                                        Container())); // const InboxView()));
+                                    builder: (context) => const InboxView()));
                           case "5":
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) =>
-                                        Container())); // const AboutUsView()));
+                                    builder: (context) => const AboutUsView()));
                           case "6":
                           // ServiceCall.logout();
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/common/color_extension.dart';
 import 'package:food_app/common_widget/round_button.dart';
+import 'package:food_app/view/menu/item_detail_view.dart';
 
 import '../../common_widget/popular_resutaurant_row.dart';
 
@@ -94,7 +95,7 @@ class _OfferViewState extends State<OfferView> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Container()));
+                                builder: (context) => const ItemDetailsView()));
                       },
                       icon: Image.asset(
                         "assets/img/shopping_cart.png",
