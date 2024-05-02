@@ -13,36 +13,20 @@ class NotificationsView extends StatefulWidget {
 class _NotificationsViewState extends State<NotificationsView> {
   List notificationArr = [
     {
-      "title": "Your orders has been picked up",
-      "time": "Now",
+      "title": "Đơn hàng của bạn đã được giao đến",
+      "time": "Bây giờ",
     },
     {
-      "title": "Your order has been delivered",
-      "time": "1 h ago",
+      "title": "Đơn hàng của bạn đã được giao đến",
+      "time": "1 tiếng trước",
     },
     {
-      "title": "Your orders has been picked up",
-      "time": "3 h ago",
+      "title": "Đơn hàng của bạn đã được giao đến",
+      "time": "3 tiếng trước",
     },
     {
-      "title": "Your order has been delivered",
-      "time": "5 h ago",
-    },
-    {
-      "title": "Your orders has been picked up",
-      "time": "05 Jun 2023",
-    },
-    {
-      "title": "Your order has been delivered",
-      "time": "05 Jun 2023",
-    },
-    {
-      "title": "Your orders has been picked up",
-      "time": "06 Jun 2023",
-    },
-    {
-      "title": "Your order has been delivered",
-      "time": "06 Jun 2023",
+      "title": "Đơn hàng của bạn đã được giao đến",
+      "time": "5 tiếng trước",
     },
   ];
 

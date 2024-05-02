@@ -13,64 +13,19 @@ class InboxView extends StatefulWidget {
 class _InboxViewState extends State<InboxView> {
   List inboxArr = [
     {
-      "title": "MealMonkey Promotions",
+      "title": "Ưu đãi MealMonkey",
       "detail":
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "Cảm ơn bạn đã quan tâm đến ứng dụng ăn uống của chúng tôi! Chúng tôi giới thiệu cho bạn khuyến mãi đặc biệt về thực phẩm và đồ uống trong tháng này. Bạn có thể tìm thấy nhiều đồ ăn và uống ngon nhất từ các nơi đến các nơi khác bằng cách sử dụng ứng dụng của chúng tôi. Với khuyến mãi này, bạn sẽ nhận được giảm giá lên đến 50% từ nhiều địa điểm ăn uống được lựa chọn..",
     },
     {
-      "title": "MealMonkey Promotions",
+      "title": "Ưu đãi MealMonkey",
       "detail":
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "Cảm ơn bạn đã quan tâm đến ứng dụng ăn uống của chúng tôi! Chúng tôi giới thiệu cho bạn khuyến mãi đặc biệt về thực phẩm và đồ uống trong tháng này. Bạn có thể tìm thấy nhiều đồ ăn và uống ngon nhất từ các nơi đến các nơi khác bằng cách sử dụng ứng dụng của chúng tôi. Với khuyến mãi này, bạn sẽ nhận được giảm giá lên đến 50% từ nhiều địa điểm ăn uống được lựa chọn..",
     },
     {
-      "title": "MealMonkey Promotions",
+      "title": "Ưu đãi MealMonkey",
       "detail":
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    },
-    {
-      "title": "MealMonkey Promotions",
-      "detail":
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    },
-    {
-      "title": "MealMonkey Promotions",
-      "detail":
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    },
-    {
-      "title": "MealMonkey Promotions",
-      "detail":
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    },
-    {
-      "title": "MealMonkey Promotions",
-      "detail":
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    },
-    {
-      "title": "MealMonkey Promotions",
-      "detail":
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    },
-    {
-      "title": "MealMonkey Promotions",
-      "detail":
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    },
-    {
-      "title": "MealMonkey Promotions",
-      "detail":
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    },
-    {
-      "title": "MealMonkey Promotions",
-      "detail":
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    },
-    {
-      "title": "MealMonkey Promotions",
-      "detail":
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "Cảm ơn bạn đã quan tâm đến ứng dụng ăn uống của chúng tôi! Chúng tôi giới thiệu cho bạn khuyến mãi đặc biệt về thực phẩm và đồ uống trong tháng này. Bạn có thể tìm thấy nhiều đồ ăn và uống ngon nhất từ các nơi đến các nơi khác bằng cách sử dụng ứng dụng của chúng tôi. Với khuyến mãi này, bạn sẽ nhận được giảm giá lên đến 50% từ nhiều địa điểm ăn uống được lựa chọn..",
     },
   ];
 

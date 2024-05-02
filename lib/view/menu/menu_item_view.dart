@@ -20,67 +20,67 @@ class _MenuItemsViewState extends State<MenuItemsView> {
   List menuItemsArr = [
     {
       "image": "assets/img/dess_1.png",
-      "name": "French Apple Pie",
+      "name": "Pizza nấm phô mai",
       "rate": "4.9",
       "rating": "124",
-      "type": "Minute by tuk tuk",
-      "food_type": "Desserts"
+      "type": "Pizza 1 nhà",
+      "food_type": "Pizza"
     },
     {
       "image": "assets/img/dess_2.png",
-      "name": "Dark Chocolate Cake",
+      "name": "Bánh tiramisu chocola",
       "rate": "4.9",
       "rating": "124",
-      "type": "Cakes by Tella",
-      "food_type": "Desserts"
+      "type": "cafe damla",
+      "food_type": "Bánh ngọt"
     },
     {
       "image": "assets/img/dess_3.png",
-      "name": "Street Shake",
+      "name": "Kem chocolate",
       "rate": "4.9",
       "rating": "124",
-      "type": "Café Racer",
-      "food_type": "Desserts"
+      "type": "cafe damla",
+      "food_type": "Kem"
     },
     {
       "image": "assets/img/dess_4.png",
-      "name": "Fudgy Chewy Brownies",
+      "name": "Bánh chocola ",
       "rate": "4.9",
       "rating": "124",
-      "type": "Minute by tuk tuk",
-      "food_type": "Desserts"
+      "type": "cafe damla",
+      "food_type": "Bánh ngọt"
     },
     {
       "image": "assets/img/dess_1.png",
-      "name": "French Apple Pie",
+      "name": "Bánh táo",
       "rate": "4.9",
       "rating": "124",
-      "type": "Minute by tuk tuk",
-      "food_type": "Desserts"
+      "type": "pizza 1 nhà",
+      "food_type": "Bánh ngọt"
     },
     {
       "image": "assets/img/dess_2.png",
-      "name": "Dark Chocolate Cake",
+      "name": "Bánh tiramisu chocola",
       "rate": "4.9",
       "rating": "124",
-      "type": "Cakes by Tella",
-      "food_type": "Desserts"
+      "type": "cafe damla",
+      "food_type": "Bánh ngọt"
     },
     {
       "image": "assets/img/dess_3.png",
-      "name": "Street Shake",
+      "name": "Kem chocolate",
       "rate": "4.9",
       "rating": "124",
-      "type": "Café Racer",
-      "food_type": "Desserts"
+      "type": "cafe damla",
+      "food_type": "Kem"
     },
     {
       "image": "assets/img/dess_4.png",
-      "name": "Fudgy Chewy Brownies",
+      "name": "Bánh chocola ",
       "rate": "4.9",
       "rating": "124",
-      "type": "Minute by tuk tuk",
-      "food_type": "Desserts"
+      "type": "cafe damla",
+      "food_type": "Bánh ngọt"
     },
   ];
 
@@ -137,7 +137,7 @@ class _MenuItemsViewState extends State<MenuItemsView> {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: RoundTextfield(
-                  hintText: "Search Food",
+                  hintText: "Tìm món",
                   controller: txtSearch,
                   left: Container(
                     alignment: Alignment.center,

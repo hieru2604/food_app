@@ -16,20 +16,21 @@ class _OnBoardingViewState extends State<OnBoardingView> {
 
   List pageArr = [
     {
-      "title": "Find Food You Love",
+      "title": "Tìm món ăn bạn yêu thích",
       "subtitle":
-          "Discover the best foods from over 1,000\nrestaurants and fast delivery to your\ndoorstep",
+          "Khám phá các món ăn tốt nhất từ hơn 1.000\nquán ăn và giao hàng tốc độ cao đến cửa của bạn",
       "image": "assets/img/on_boarding_1.png",
     },
     {
-      "title": "Fast Delivery",
-      "subtitle": "Fast food delivery to your home, office\n wherever you are",
+      "title": "Giao hàng nhanh",
+      "subtitle":
+          "Đặt món ăn nhanh giao đến nhà, văn phòng, \nbất kỳ nơi nào bạn đang ở",
       "image": "assets/img/on_boarding_2.png",
     },
     {
-      "title": "Live Tracking",
+      "title": "Theo dõi trực tiếp",
       "subtitle":
-          "Real time tracking of your food on the app\nonce you placed the order",
+          "Theo dõi trực tiếp đơn hàng trên ứng dụng sau khi bạn đặt đơn",
       "image": "assets/img/on_boarding_3.png",
     },
   ];

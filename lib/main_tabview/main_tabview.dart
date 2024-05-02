@@ -73,7 +73,7 @@ class _MainTabViewState extends State<MainTabView> {
                   },
                   isSelected: selctTab == 0),
               TabButton(
-                  title: "Offer",
+                  title: "Ưu đãi",
                   icon: "assets/img/tab_offer.png",
                   onTap: () {
                     if (selctTab != 1) {
@@ -90,7 +90,7 @@ class _MainTabViewState extends State<MainTabView> {
                 height: 40,
               ),
               TabButton(
-                  title: "Profile",
+                  title: "Cá nhân",
                   icon: "assets/img/tab_profile.png",
                   onTap: () {
                     if (selctTab != 3) {
@@ -103,7 +103,7 @@ class _MainTabViewState extends State<MainTabView> {
                   },
                   isSelected: selctTab == 3),
               TabButton(
-                  title: "More",
+                  title: "Thêm",
                   icon: "assets/img/tab_more.png",
                   onTap: () {
                     if (selctTab != 4) {

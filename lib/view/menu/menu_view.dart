@@ -15,22 +15,22 @@ class MenuView extends StatefulWidget {
 class _MenuViewState extends State<MenuView> {
   List menuArr = [
     {
-      "name": "Food",
+      "name": "Món ăn chính",
       "image": "assets/img/menu_1.png",
       "items_count": "120",
     },
     {
-      "name": "Beverages",
+      "name": "Đồ uống",
       "image": "assets/img/menu_2.png",
       "items_count": "220",
     },
     {
-      "name": "Desserts",
+      "name": "Món tráng miệng",
       "image": "assets/img/menu_3.png",
       "items_count": "155",
     },
     {
-      "name": "Promotions",
+      "name": "Ưu đãi",
       "image": "assets/img/menu_4.png",
       "items_count": "25",
     },
@@ -94,7 +94,7 @@ class _MenuViewState extends State<MenuView> {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: RoundTextfield(
-                      hintText: "Search Food",
+                      hintText: "Tìm món",
                       controller: txtSearch,
                       left: Container(
                         alignment: Alignment.center,

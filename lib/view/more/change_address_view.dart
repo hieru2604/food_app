@@ -68,7 +68,7 @@ class _ChangeAddressViewState extends State<ChangeAddressView> {
         ),
         centerTitle: false,
         title: Text(
-          "Change Address",
+          "Đổi địa chỉ",
           style: TextStyle(
               color: TColor.primaryText,
               fontSize: 20,
@@ -105,7 +105,7 @@ class _ChangeAddressViewState extends State<ChangeAddressView> {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 25),
             child: RoundTextfield(
-              hintText: "Search Address",
+              hintText: "Tìm địa chỉ",
               left: Icon(Icons.search, color: TColor.primaryText),
             ),
           ),
@@ -118,7 +118,7 @@ class _ChangeAddressViewState extends State<ChangeAddressView> {
               ),
               Expanded(
                 child: Text(
-                  "Choose a saved place",
+                  "Chọn địa chỉ đã lưu",
                   style: TextStyle(
                       color: TColor.primaryText,
                       fontSize: 14,

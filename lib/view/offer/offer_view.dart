@@ -18,51 +18,51 @@ class _OfferViewState extends State<OfferView> {
   List offerArr = [
     {
       "image": "assets/img/offer_1.png",
-      "name": "Café de Noires",
+      "name": "Combo buổi sáng",
       "rate": "4.9",
       "rating": "124",
-      "type": "Cafa",
-      "food_type": "Western Food"
+      "type": "cafe damla",
+      "food_type": "Món ăn ý"
     },
     {
       "image": "assets/img/offer_2.png",
-      "name": "Isso",
+      "name": "Combo buổi trưa",
       "rate": "4.9",
       "rating": "124",
-      "type": "Cafa",
-      "food_type": "Western Food"
+      "type": "cafe damla",
+      "food_type": "Món việt"
     },
     {
       "image": "assets/img/offer_3.png",
-      "name": "Cafe Beans",
+      "name": "Cafe macchiato",
       "rate": "4.9",
       "rating": "124",
-      "type": "Cafa",
-      "food_type": "Western Food"
+      "type": "cafe damla",
+      "food_type": "Nước"
     },
     {
       "image": "assets/img/offer_1.png",
-      "name": "Café de Noires",
+      "name": "Combo buổi sáng",
       "rate": "4.9",
       "rating": "124",
-      "type": "Cafa",
-      "food_type": "Western Food"
+      "type": "cafe damla",
+      "food_type": "Món ăn ý"
     },
     {
       "image": "assets/img/offer_2.png",
-      "name": "Isso",
+      "name": "Combo buổi trưa",
       "rate": "4.9",
       "rating": "124",
-      "type": "Cafa",
-      "food_type": "Western Food"
+      "type": "cafe damla",
+      "food_type": "Món việt"
     },
     {
       "image": "assets/img/offer_3.png",
-      "name": "Cafe Beans",
+      "name": "Cafe macchiato",
       "rate": "4.9",
       "rating": "124",
-      "type": "Cafa",
-      "food_type": "Western Food"
+      "type": "cafe damla",
+      "food_type": "Nước"
     },
   ];
 
@@ -84,7 +84,7 @@ class _OfferViewState extends State<OfferView> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "Latest Offers",
+                      "Ưu đãi mới nhất",
                       style: TextStyle(
                           color: TColor.primaryText,
                           fontSize: 20,
@@ -112,7 +112,7 @@ class _OfferViewState extends State<OfferView> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Find discounts, Offers special\nmeals and more!",
+                      "Tìm giảm giá, Ưu đãi nhất\nMón ăn đặc biệt và nhiều hơn nữa!",
                       style: TextStyle(
                           color: TColor.secondaryText,
                           fontSize: 14,
@@ -130,7 +130,7 @@ class _OfferViewState extends State<OfferView> {
                   width: 140,
                   height: 30,
                   child: RoundButton(
-                      title: "check Offers", fontSize: 12, onPressed: () {}),
+                      title: "Xem ưu đãi", fontSize: 12, onPressed: () {}),
                 ),
               ),
               const SizedBox(

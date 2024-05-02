@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/common/color_extension.dart';
 import 'package:food_app/common_widget/round_button.dart';
+import 'package:intl/intl.dart';
 
 import 'checkout_view.dart';
 
@@ -13,11 +14,11 @@ class MyOrderView extends StatefulWidget {
 
 class _MyOrderViewState extends State<MyOrderView> {
   List itemArr = [
-    {"name": "Beef Burger", "qty": "1", "price": 16.0},
-    {"name": "Classic Burger", "qty": "1", "price": 14.0},
-    {"name": "Cheese Chicken Burger", "qty": "1", "price": 17.0},
-    {"name": "Chicken Legs Basket", "qty": "1", "price": 15.0},
-    {"name": "French Fires Large", "qty": "1", "price": 6.0}
+    {"name": "pizza nấm", "qty": "1", "price": 100000},
+    {"name": "Pizza gà", "qty": "1", "price": 100000},
+    {"name": "pizza hải sản", "qty": "1", "price": 100000},
+    {"name": "Coca cola", "qty": "2", "price": 15000},
+    {"name": "Bánh socola", "qty": "1", "price": 30000}
   ];
 
   @override
@@ -49,7 +50,7 @@ class _MyOrderViewState extends State<MyOrderView> {
                     ),
                     Expanded(
                       child: Text(
-                        "My Order",
+                        "Giỏ hàng",
                         style: TextStyle(
                             color: TColor.primaryText,
                             fontSize: 20,
@@ -80,7 +81,7 @@ class _MyOrderViewState extends State<MyOrderView> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "King Burgers",
+                            "Pizza 1 nhà",
                             textAlign: TextAlign.center,
                             style: TextStyle(
                                 color: TColor.primaryText,
@@ -94,7 +95,7 @@ class _MyOrderViewState extends State<MyOrderView> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Image.asset(
-                                "assets/img/rate.png",
+                                "assets/img/m_res_1.png",
                                 width: 10,
                                 height: 10,
                                 fit: BoxFit.cover,
@@ -126,7 +127,7 @@ class _MyOrderViewState extends State<MyOrderView> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Text(
-                                "Burger",
+                                "pizza",
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                     color: TColor.secondaryText, fontSize: 12),
@@ -138,7 +139,7 @@ class _MyOrderViewState extends State<MyOrderView> {
                                     color: TColor.primary, fontSize: 12),
                               ),
                               Text(
-                                "Western Food",
+                                "Món tây",
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                     color: TColor.secondaryText, fontSize: 12),
@@ -162,7 +163,7 @@ class _MyOrderViewState extends State<MyOrderView> {
                               ),
                               Expanded(
                                 child: Text(
-                                  "No 03, 4th Lane, Newyork",
+                                  "653 Sư Vạn Hạnh, Phường 12, Quận 10",
                                   textAlign: TextAlign.left,
                                   style: TextStyle(
                                       color: TColor.secondaryText,
@@ -214,7 +215,9 @@ class _MyOrderViewState extends State<MyOrderView> {
                             width: 15,
                           ),
                           Text(
-                            "\$${cObj["price"].toString()}",
+                            NumberFormat.currency(locale: "vi_VN")
+                                .format(cObj["price"]),
+                            //"\$${cObj["price"].toString()}",
                             style: TextStyle(
                                 color: TColor.primaryText,
                                 fontSize: 13,
@@ -235,7 +238,7 @@ class _MyOrderViewState extends State<MyOrderView> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Delivery Instructions",
+                          "Ghi chú giao hàng",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: TColor.primaryText,
@@ -246,7 +249,7 @@ class _MyOrderViewState extends State<MyOrderView> {
                           onPressed: () {},
                           icon: Icon(Icons.add, color: TColor.primary),
                           label: Text(
-                            "Add Notes",
+                            "Thêm ghi chú",
                             style: TextStyle(
                                 color: TColor.primary,
                                 fontSize: 13,
@@ -266,7 +269,7 @@ class _MyOrderViewState extends State<MyOrderView> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Sub Total",
+                          "Tổng",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: TColor.primaryText,
@@ -274,7 +277,7 @@ class _MyOrderViewState extends State<MyOrderView> {
                               fontWeight: FontWeight.w700),
                         ),
                         Text(
-                          "\$68",
+                          NumberFormat.currency(locale: "vi_VN").format(345000),
                           style: TextStyle(
                               color: TColor.primary,
                               fontSize: 13,
@@ -289,7 +292,7 @@ class _MyOrderViewState extends State<MyOrderView> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Delivery Cost",
+                          "Phí giao hàng",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: TColor.primaryText,
@@ -297,7 +300,7 @@ class _MyOrderViewState extends State<MyOrderView> {
                               fontWeight: FontWeight.w700),
                         ),
                         Text(
-                          "\$2",
+                          NumberFormat.currency(locale: "vi_VN").format(50000),
                           style: TextStyle(
                               color: TColor.primary,
                               fontSize: 13,
@@ -319,7 +322,7 @@ class _MyOrderViewState extends State<MyOrderView> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Total",
+                          "Tổng cộng",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: TColor.primaryText,
@@ -327,7 +330,7 @@ class _MyOrderViewState extends State<MyOrderView> {
                               fontWeight: FontWeight.w700),
                         ),
                         Text(
-                          "\$70",
+                          NumberFormat.currency(locale: "vi_VN").format(395000),
                           style: TextStyle(
                               color: TColor.primary,
                               fontSize: 22,
@@ -339,7 +342,7 @@ class _MyOrderViewState extends State<MyOrderView> {
                       height: 25,
                     ),
                     RoundButton(
-                        title: "Checkout",
+                        title: "Thanh toán",
                         onPressed: () {
                           Navigator.push(
                             context,

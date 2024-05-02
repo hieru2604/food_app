@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/common/color_extension.dart';
 import 'package:food_app/common_widget/round_button.dart';
+import 'package:intl/intl.dart';
 
 import 'change_address_view.dart';
 import 'checkout_message_view.dart';
@@ -14,9 +15,9 @@ class CheckoutView extends StatefulWidget {
 
 class _CheckoutViewState extends State<CheckoutView> {
   List paymentArr = [
-    {"name": "Cash on delivery", "icon": "assets/img/cash.png"},
+    {"name": "Thanh toán trực tiếp", "icon": "assets/img/cash.png"},
     {"name": "**** **** **** 2187", "icon": "assets/img/visa_icon.png"},
-    {"name": "test@gmail.com", "icon": "assets/img/paypal.png"},
+    {"name": "paypal@gmail.com", "icon": "assets/img/paypal.png"},
   ];
 
   int selectMethod = -1;
@@ -50,7 +51,7 @@ class _CheckoutViewState extends State<CheckoutView> {
                     ),
                     Expanded(
                       child: Text(
-                        "Checkout",
+                        "Thanh toán",
                         style: TextStyle(
                             color: TColor.primaryText,
                             fontSize: 20,
@@ -67,7 +68,7 @@ class _CheckoutViewState extends State<CheckoutView> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Delivery Address",
+                      "Địa chỉ",
                       textAlign: TextAlign.center,
                       style:
                           TextStyle(color: TColor.secondaryText, fontSize: 12),
@@ -80,7 +81,7 @@ class _CheckoutViewState extends State<CheckoutView> {
                       children: [
                         Expanded(
                           child: Text(
-                            "653 Nostrand Ave.\nBrooklyn, NY 11216",
+                            "653 Sư Vạn Hạnh, Phường 12, Quận 10, Thành phố Hồ Chí Minh",
                             style: TextStyle(
                                 color: TColor.primaryText,
                                 fontSize: 15,
@@ -100,7 +101,7 @@ class _CheckoutViewState extends State<CheckoutView> {
                             );
                           },
                           child: Text(
-                            "Change",
+                            "Thay đổi",
                             textAlign: TextAlign.center,
                             style: TextStyle(
                                 color: TColor.primary,
@@ -129,7 +130,7 @@ class _CheckoutViewState extends State<CheckoutView> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Payment method",
+                          "Phương thức thanh toán",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: TColor.secondaryText,
@@ -140,7 +141,7 @@ class _CheckoutViewState extends State<CheckoutView> {
                           onPressed: () {},
                           icon: Icon(Icons.add, color: TColor.primary),
                           label: Text(
-                            "Add Card",
+                            "Thêm thẻ",
                             style: TextStyle(
                                 color: TColor.primary,
                                 fontSize: 13,
@@ -221,7 +222,7 @@ class _CheckoutViewState extends State<CheckoutView> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Sub Total",
+                          "Tổng đơn",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: TColor.primaryText,
@@ -229,7 +230,7 @@ class _CheckoutViewState extends State<CheckoutView> {
                               fontWeight: FontWeight.w500),
                         ),
                         Text(
-                          "\$68",
+                          NumberFormat.currency(locale: "vi_VN").format(345000),
                           style: TextStyle(
                               color: TColor.primaryText,
                               fontSize: 13,
@@ -244,7 +245,7 @@ class _CheckoutViewState extends State<CheckoutView> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Delivery Cost",
+                          "Phí giao hàng",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: TColor.primaryText,
@@ -252,7 +253,7 @@ class _CheckoutViewState extends State<CheckoutView> {
                               fontWeight: FontWeight.w500),
                         ),
                         Text(
-                          "\$2",
+                          NumberFormat.currency(locale: "vi_VN").format(50000),
                           style: TextStyle(
                               color: TColor.primaryText,
                               fontSize: 13,
@@ -267,7 +268,7 @@ class _CheckoutViewState extends State<CheckoutView> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Discount",
+                          "Giảm giá",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: TColor.primaryText,
@@ -275,7 +276,7 @@ class _CheckoutViewState extends State<CheckoutView> {
                               fontWeight: FontWeight.w500),
                         ),
                         Text(
-                          "-\$4",
+                          NumberFormat.currency(locale: "vi_VN").format(150000),
                           style: TextStyle(
                               color: TColor.primaryText,
                               fontSize: 13,
@@ -297,7 +298,7 @@ class _CheckoutViewState extends State<CheckoutView> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Total",
+                          "Tổng cộng",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: TColor.primaryText,
@@ -305,7 +306,7 @@ class _CheckoutViewState extends State<CheckoutView> {
                               fontWeight: FontWeight.w500),
                         ),
                         Text(
-                          "\$66",
+                          NumberFormat.currency(locale: "vi_VN").format(245000),
                           style: TextStyle(
                               color: TColor.primaryText,
                               fontSize: 15,
@@ -327,7 +328,7 @@ class _CheckoutViewState extends State<CheckoutView> {
                 padding:
                     const EdgeInsets.symmetric(vertical: 20, horizontal: 25),
                 child: RoundButton(
-                    title: "Send Order",
+                    title: "Thanh toán",
                     onPressed: () {
                       showModalBottomSheet(
                           context: context,

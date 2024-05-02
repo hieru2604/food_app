@@ -4,7 +4,7 @@ import 'package:food_app/view/more/inbox_view.dart';
 import 'package:food_app/view/more/payment_details_view.dart';
 
 import '../../common/color_extension.dart';
-//import '../../common/service_call.dart';
+//ưimport '../../common/service_call.dart';
 import 'my_order_view.dart';
 import 'notification_view.dart';
 
@@ -19,37 +19,37 @@ class _MoreViewState extends State<MoreView> {
   List moreArr = [
     {
       "index": "1",
-      "name": "Payment Details",
+      "name": "Hình thức thanh toán",
       "image": "assets/img/more_payment.png",
       "base": 0
     },
     {
       "index": "2",
-      "name": "My Orders",
+      "name": "Đơn hàng của tôi",
       "image": "assets/img/more_my_order.png",
       "base": 0
     },
     {
       "index": "3",
-      "name": "Notifications",
+      "name": "Thông báo",
       "image": "assets/img/more_notification.png",
       "base": 15
     },
     {
       "index": "4",
-      "name": "Inbox",
+      "name": "Hòm thư",
       "image": "assets/img/more_inbox.png",
       "base": 0
     },
     {
       "index": "5",
-      "name": "About Us",
+      "name": "Về chúng tôi",
       "image": "assets/img/more_info.png",
       "base": 0
     },
     {
       "index": "6",
-      "name": "Logout",
+      "name": "Đăng xuất",
       "image": "assets/img/more_info.png",
       "base": 0
     },
@@ -73,7 +73,7 @@ class _MoreViewState extends State<MoreView> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "More",
+                      "Thông tin thêm",
                       style: TextStyle(
                           color: TColor.primaryText,
                           fontSize: 20,

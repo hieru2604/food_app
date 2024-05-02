@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:food_app/common_widget/round_icon_button.dart';
 import 'package:food_app/view/more/my_order_view.dart';
+import 'package:intl/intl.dart';
 
 import '../../common/color_extension.dart';
 
@@ -13,7 +14,7 @@ class ItemDetailsView extends StatefulWidget {
 }
 
 class _ItemDetailsViewState extends State<ItemDetailsView> {
-  double price = 15;
+  double price = 100000;
   int qty = 1;
   bool isFav = false;
 
@@ -68,7 +69,7 @@ class _ItemDetailsViewState extends State<ItemDetailsView> {
                                 padding:
                                     const EdgeInsets.symmetric(horizontal: 25),
                                 child: Text(
-                                  "Tandoori Chicken Pizza",
+                                  "Pizza nấm phô mai",
                                   style: TextStyle(
                                       color: TColor.primaryText,
                                       fontSize: 22,
@@ -115,7 +116,7 @@ class _ItemDetailsViewState extends State<ItemDetailsView> {
                                           height: 4,
                                         ),
                                         Text(
-                                          " 4 Star Ratings",
+                                          "4 sao đánh giá",
                                           style: TextStyle(
                                               color: TColor.primary,
                                               fontSize: 11,
@@ -128,7 +129,8 @@ class _ItemDetailsViewState extends State<ItemDetailsView> {
                                           CrossAxisAlignment.end,
                                       children: [
                                         Text(
-                                          "\$${price.toStringAsFixed(2)}",
+                                          NumberFormat.currency(locale: "vi_VN")
+                                              .format(price),
                                           style: TextStyle(
                                               color: TColor.primaryText,
                                               fontSize: 31,
@@ -138,7 +140,7 @@ class _ItemDetailsViewState extends State<ItemDetailsView> {
                                           height: 4,
                                         ),
                                         Text(
-                                          "/per Portion",
+                                          "/1 bánh",
                                           style: TextStyle(
                                               color: TColor.primaryText,
                                               fontSize: 11,
@@ -156,7 +158,7 @@ class _ItemDetailsViewState extends State<ItemDetailsView> {
                                 padding:
                                     const EdgeInsets.symmetric(horizontal: 25),
                                 child: Text(
-                                  "Description",
+                                  "Thông tin về món",
                                   style: TextStyle(
                                       color: TColor.primaryText,
                                       fontSize: 14,
@@ -170,7 +172,7 @@ class _ItemDetailsViewState extends State<ItemDetailsView> {
                                 padding:
                                     const EdgeInsets.symmetric(horizontal: 25),
                                 child: Text(
-                                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare leo non mollis id cursus. Eu euismod faucibus in leo malesuada",
+                                  "Một bánh pizza nướng phô mai và được lát bởi nấm và thịt. ",
                                   style: TextStyle(
                                       color: TColor.secondaryText,
                                       fontSize: 12),
@@ -194,7 +196,7 @@ class _ItemDetailsViewState extends State<ItemDetailsView> {
                                 padding:
                                     const EdgeInsets.symmetric(horizontal: 25),
                                 child: Text(
-                                  "Customize your Order",
+                                  "Tùy chỉnh đơn hàng của bạn",
                                   style: TextStyle(
                                       color: TColor.primaryText,
                                       fontSize: 14,
@@ -229,7 +231,7 @@ class _ItemDetailsViewState extends State<ItemDetailsView> {
                                       }).toList(),
                                       onChanged: (val) {},
                                       hint: Text(
-                                        "- Select the size of portion -",
+                                        "- Chọn size -",
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
                                             color: TColor.secondaryText,
@@ -254,7 +256,7 @@ class _ItemDetailsViewState extends State<ItemDetailsView> {
                                   child: DropdownButtonHideUnderline(
                                     child: DropdownButton(
                                       isExpanded: true,
-                                      items: ["small", "Big"].map((e) {
+                                      items: ["S", "M", "L"].map((e) {
                                         return DropdownMenuItem(
                                           value: e,
                                           child: Text(
@@ -267,7 +269,7 @@ class _ItemDetailsViewState extends State<ItemDetailsView> {
                                       }).toList(),
                                       onChanged: (val) {},
                                       hint: Text(
-                                        "- Select the ingredients -",
+                                        "- Chọn nguyên liệu -",
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
                                             color: TColor.secondaryText,
@@ -286,7 +288,7 @@ class _ItemDetailsViewState extends State<ItemDetailsView> {
                                 child: Row(
                                   children: [
                                     Text(
-                                      "Number of Portions",
+                                      "Chọn số lượng",
                                       style: TextStyle(
                                           color: TColor.primaryText,
                                           fontSize: 14,
@@ -428,7 +430,7 @@ class _ItemDetailsViewState extends State<ItemDetailsView> {
                                                     CrossAxisAlignment.center,
                                                 children: [
                                                   Text(
-                                                    "Total Price",
+                                                    "Tổng cộng",
                                                     style: TextStyle(
                                                         color:
                                                             TColor.primaryText,
@@ -440,7 +442,9 @@ class _ItemDetailsViewState extends State<ItemDetailsView> {
                                                     height: 15,
                                                   ),
                                                   Text(
-                                                    "\$${(price * qty).toString()}",
+                                                    NumberFormat.currency(
+                                                            locale: "vi_VN")
+                                                        .format(price * qty),
                                                     style: TextStyle(
                                                         color:
                                                             TColor.primaryText,
@@ -455,7 +459,7 @@ class _ItemDetailsViewState extends State<ItemDetailsView> {
                                                     width: 130,
                                                     height: 25,
                                                     child: RoundIconButton(
-                                                        title: "Add to Cart",
+                                                        title: "Thêm vào giỏ",
                                                         icon:
                                                             "assets/img/shopping_add.png",
                                                         color: TColor.primary,

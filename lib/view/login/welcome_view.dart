@@ -38,7 +38,7 @@ class _WelcomeViewState extends State<WelcomeView> {
             height: media.width * 0.1,
           ),
           Text(
-            "Discover the best foods from over 1,000\nrestaurants and fast delivery to your\ndoorstep",
+            "Khám phá các món ăn tốt nhất từ hơn 1.000\nquán ăn và giao hàng tốc độ cao đến cửa \ncủa bạn",
             textAlign: TextAlign.center,
             style: TextStyle(
                 color: TColor.secondaryText,

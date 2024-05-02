@@ -34,14 +34,14 @@ class _LoginViewState extends State<LoginView> {
                 height: 64,
               ),
               Text(
-                "Login",
+                "Đăng nhập",
                 style: TextStyle(
                     color: TColor.primaryText,
                     fontSize: 30,
                     fontWeight: FontWeight.w800),
               ),
               Text(
-                "Add your details to login",
+                "Vui lòng đăng nhập vào app",
                 style: TextStyle(
                     color: TColor.secondaryText,
                     fontSize: 14,
@@ -51,7 +51,7 @@ class _LoginViewState extends State<LoginView> {
                 height: 25,
               ),
               RoundTextfield(
-                hintText: "Your Email",
+                hintText: "Email",
                 controller: txtEmail,
                 keyboardType: TextInputType.emailAddress,
               ),
@@ -67,14 +67,14 @@ class _LoginViewState extends State<LoginView> {
                 height: 25,
               ),
               RoundButton(
-                  title: "Login",
+                  title: "Đăng nhập",
                   onPressed: () {
                     Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const OnBoardingView(),
-                    ),
-                  );
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const OnBoardingView(),
+                      ),
+                    );
                   }),
               const SizedBox(
                 height: 4,
@@ -84,7 +84,7 @@ class _LoginViewState extends State<LoginView> {
                   //
                 },
                 child: Text(
-                  "Forgot your password?",
+                  "Quên mật khẩu?",
                   style: TextStyle(
                       color: TColor.secondaryText,
                       fontSize: 14,
@@ -95,7 +95,7 @@ class _LoginViewState extends State<LoginView> {
                 height: 30,
               ),
               Text(
-                "or Login With",
+                "Hoặc đăng nhập bằng",
                 style: TextStyle(
                     color: TColor.secondaryText,
                     fontSize: 14,
@@ -106,22 +106,19 @@ class _LoginViewState extends State<LoginView> {
               ),
               RoundIconButton(
                 icon: "assets/img/facebook_logo.png",
-                title: "Login with Facebook",
+                title: "Facebook",
                 color: const Color(0xff367FC0),
                 onPressed: () {},
               ),
-              
               const SizedBox(
                 height: 25,
               ),
-
               RoundIconButton(
                 icon: "assets/img/google_logo.png",
-                title: "Login with Google",
+                title: "Google",
                 color: const Color(0xffDD4B39),
                 onPressed: () {},
               ),
-              
               const SizedBox(
                 height: 25,
               ),
@@ -138,14 +135,14 @@ class _LoginViewState extends State<LoginView> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      "Dont have an Accoount?",
+                      "Chưa có tài khoản? ",
                       style: TextStyle(
                           color: TColor.secondaryText,
                           fontSize: 14,
                           fontWeight: FontWeight.w500),
                     ),
                     Text(
-                      "Sign Up",
+                      "Đăng ký",
                       style: TextStyle(
                           color: TColor.primary,
                           fontSize: 14,

@@ -37,14 +37,14 @@ class _SignUpViewState extends State<SignUpView> {
                 height: 64,
               ),
               Text(
-                "Sign Up",
+                "Đăng ký",
                 style: TextStyle(
                     color: TColor.primaryText,
                     fontSize: 30,
                     fontWeight: FontWeight.w800),
               ),
               Text(
-                "Add your details to sign up",
+                "Nhập thông tin tài khoản",
                 style: TextStyle(
                     color: TColor.secondaryText,
                     fontSize: 14,
@@ -54,7 +54,7 @@ class _SignUpViewState extends State<SignUpView> {
                 height: 25,
               ),
               RoundTextfield(
-                hintText: "Name",
+                hintText: "Tên",
                 controller: txtName,
               ),
               const SizedBox(
@@ -68,7 +68,7 @@ class _SignUpViewState extends State<SignUpView> {
                 height: 25,
               ),
               RoundTextfield(
-                hintText: "Mobile no",
+                hintText: "Số điện thoại",
                 controller: txtMobile,
                 keyboardType: TextInputType.phone,
               ),
@@ -76,7 +76,7 @@ class _SignUpViewState extends State<SignUpView> {
                 height: 25,
               ),
               RoundTextfield(
-                hintText: "Address",
+                hintText: "Địa chỉ",
                 controller: txtAddress,
               ),
               const SizedBox(
@@ -91,7 +91,7 @@ class _SignUpViewState extends State<SignUpView> {
                 height: 25,
               ),
               RoundTextfield(
-                hintText: "Confirm Password",
+                hintText: "Nhập lại Password",
                 controller: txtConfirmPassword,
                 obscureText: true,
               ),
@@ -99,12 +99,10 @@ class _SignUpViewState extends State<SignUpView> {
                 height: 25,
               ),
               RoundButton(
-                  title: "Sign Up",
+                  title: "Đăng ký",
                   onPressed: () {
                     //
                   }),
-              
-              
               TextButton(
                 onPressed: () {
                   Navigator.push(
@@ -118,14 +116,14 @@ class _SignUpViewState extends State<SignUpView> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      "Already have an Account?",
+                      "Đã có tài khoản? ",
                       style: TextStyle(
                           color: TColor.secondaryText,
                           fontSize: 14,
                           fontWeight: FontWeight.w500),
                     ),
                     Text(
-                      "Login",
+                      "Đăng nhập",
                       style: TextStyle(
                           color: TColor.primary,
                           fontSize: 14,

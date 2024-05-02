@@ -60,7 +60,7 @@ class _CheckoutMessageViewState extends State<CheckoutMessageView> {
             height: 8,
           ),
           Text(
-            "for your order",
+            "Cảm ơn vì đã đặt hàng",
             style: TextStyle(
                 color: TColor.primaryText,
                 fontSize: 17,
@@ -70,18 +70,18 @@ class _CheckoutMessageViewState extends State<CheckoutMessageView> {
             height: 25,
           ),
           Text(
-            "Your Order is now being processed. We will let you know once the order is picked from the outlet. Check the status of your Order",
+            "Đơn hàng của bạn đang được xử lý. Chúng tôi sẽ thông báo cho bạn khi đơn hàng được lấy từ điểm bán hàng. Kiểm tra trạng thái đơn hàng",
             textAlign: TextAlign.center,
             style: TextStyle(color: TColor.primaryText, fontSize: 14),
           ),
           const SizedBox(
             height: 35,
           ),
-          RoundButton(title: "Track My Order", onPressed: () {}),
+          RoundButton(title: "Kiểm tra trạng thái đơn hàng", onPressed: () {}),
           TextButton(
             onPressed: () {},
             child: Text(
-              "Back To Home",
+              "Về trang chủ",
               textAlign: TextAlign.center,
               style: TextStyle(
                   color: TColor.primaryText,

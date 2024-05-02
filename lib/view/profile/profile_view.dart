@@ -42,7 +42,7 @@ class _ProfileViewState extends State<ProfileView> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  "Profile",
+                  "Trang cá nhân",
                   style: TextStyle(
                       color: TColor.primaryText,
                       fontSize: 20,
@@ -96,12 +96,12 @@ class _ProfileViewState extends State<ProfileView> {
               size: 12,
             ),
             label: Text(
-              "Edit Profile",
+              "Chỉnh sửa thông tin",
               style: TextStyle(color: TColor.primary, fontSize: 12),
             ),
           ),
           Text(
-            "Hi there Emilia!",
+            "Chào A!",
             style: TextStyle(
                 color: TColor.primaryText,
                 fontSize: 16,
@@ -110,7 +110,7 @@ class _ProfileViewState extends State<ProfileView> {
           TextButton(
             onPressed: () {},
             child: Text(
-              "Sign Out",
+              "Đăng xuất",
               style: TextStyle(
                   color: TColor.secondaryText,
                   fontSize: 11,
@@ -123,8 +123,8 @@ class _ProfileViewState extends State<ProfileView> {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
             child: RoundTitleTextfield(
-              title: "Name",
-              hintText: "Enter Name",
+              title: "Họ tên",
+              hintText: "Nhập tên",
               controller: txtName,
             ),
           ),
@@ -132,7 +132,7 @@ class _ProfileViewState extends State<ProfileView> {
             padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
             child: RoundTitleTextfield(
               title: "Email",
-              hintText: "Enter Email",
+              hintText: "Nhập Email",
               keyboardType: TextInputType.emailAddress,
               controller: txtEmail,
             ),
@@ -140,8 +140,8 @@ class _ProfileViewState extends State<ProfileView> {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
             child: RoundTitleTextfield(
-              title: "Mobile No",
-              hintText: "Enter Mobile No",
+              title: "Số điện thoại",
+              hintText: "Nhập số điện thoại",
               controller: txtMobile,
               keyboardType: TextInputType.phone,
             ),
@@ -149,15 +149,15 @@ class _ProfileViewState extends State<ProfileView> {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
             child: RoundTitleTextfield(
-              title: "Address",
-              hintText: "Enter Address",
+              title: "Địa chỉ",
+              hintText: "Nhập địa chỉ",
               controller: txtAddress,
             ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
             child: RoundTitleTextfield(
-              title: "Password",
+              title: "Mật khẩu",
               hintText: "* * * * * *",
               obscureText: true,
               controller: txtPassword,
@@ -166,7 +166,7 @@ class _ProfileViewState extends State<ProfileView> {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
             child: RoundTitleTextfield(
-              title: "Confirm Password",
+              title: "Xác nhận mật khẩu",
               hintText: "* * * * * *",
               obscureText: true,
               controller: txtConfirmPassword,
@@ -177,7 +177,7 @@ class _ProfileViewState extends State<ProfileView> {
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: RoundButton(title: "Save", onPressed: () {}),
+            child: RoundButton(title: "Lưu thông tin", onPressed: () {}),
           ),
           const SizedBox(
             height: 20,

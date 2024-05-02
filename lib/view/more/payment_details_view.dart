@@ -49,7 +49,7 @@ class _PaymentDetailsViewState extends State<PaymentDetailsView> {
                     ),
                     Expanded(
                       child: Text(
-                        "Payment Details",
+                        "Phương thức thanh toán",
                         style: TextStyle(
                             color: TColor.primaryText,
                             fontSize: 20,
@@ -76,7 +76,7 @@ class _PaymentDetailsViewState extends State<PaymentDetailsView> {
                 padding:
                     const EdgeInsets.symmetric(vertical: 15, horizontal: 25),
                 child: Text(
-                  "Customize your payment method",
+                  "Chọn hình thức thanh toán",
                   style: TextStyle(
                       color: TColor.primaryText,
                       fontSize: 16,
@@ -111,7 +111,7 @@ class _PaymentDetailsViewState extends State<PaymentDetailsView> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            "Cash/Card On Delivery",
+                            "Tiền mặt",
                             style: TextStyle(
                                 color: TColor.primaryText,
                                 fontSize: 12,
@@ -191,7 +191,7 @@ class _PaymentDetailsViewState extends State<PaymentDetailsView> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            "Other Methods",
+                            "Phương thức khác",
                             style: TextStyle(
                                 color: TColor.primaryText,
                                 fontSize: 12,

@@ -37,7 +37,7 @@ class _AddCardViewState extends State<AddCardView> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                "Add Credit/Debit Card",
+                "Thêm thẻ tín dụng/Visa",
                 style: TextStyle(
                     color: TColor.primaryText,
                     fontSize: 14,
@@ -63,7 +63,7 @@ class _AddCardViewState extends State<AddCardView> {
             height: 15,
           ),
           RoundTextfield(
-            hintText: "Card Number",
+            hintText: "Số thẻ",
             controller: txtCardNumber,
             keyboardType: TextInputType.number,
           ),
@@ -73,7 +73,7 @@ class _AddCardViewState extends State<AddCardView> {
           Row(
             children: [
               Text(
-                "Expiry",
+                "Ngày hết hạn",
                 style: TextStyle(
                     color: TColor.primaryText,
                     fontSize: 14,
@@ -103,7 +103,7 @@ class _AddCardViewState extends State<AddCardView> {
             height: 15,
           ),
           RoundTextfield(
-            hintText: "Card Security Code",
+            hintText: "Số bảo mật của thẻ",
             controller: txtCardCode,
             keyboardType: TextInputType.number,
           ),
@@ -111,14 +111,14 @@ class _AddCardViewState extends State<AddCardView> {
             height: 15,
           ),
           RoundTextfield(
-            hintText: "First Name",
+            hintText: "Tên",
             controller: txtFirstName,
           ),
           const SizedBox(
             height: 15,
           ),
           RoundTextfield(
-            hintText: "Last Name",
+            hintText: "Họ",
             controller: txtLastName,
           ),
           const SizedBox(
@@ -126,7 +126,7 @@ class _AddCardViewState extends State<AddCardView> {
           ),
           Row(children: [
             Text(
-              "You can remove this card at anytime",
+              "Bạn có thể xóa thẻ bất cứ khi nào",
               style: TextStyle(
                   color: TColor.secondaryText,
                   fontSize: 14,
@@ -146,7 +146,7 @@ class _AddCardViewState extends State<AddCardView> {
             height: 25,
           ),
           RoundIconButton(
-              title: "Add Card",
+              title: "Thêm thẻ",
               icon: "assets/img/add.png",
               color: TColor.primary,
               fontSize: 16,
